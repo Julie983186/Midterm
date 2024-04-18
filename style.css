@@ -500,6 +500,9 @@ progress[value]::-webkit-progress-value {
     margin-right: 50px;
 }
 /*兩層圖片交換*/
+.pic{
+    position: relative;
+}
 .pic img{
     border-radius:20px;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
@@ -510,20 +513,20 @@ progress[value]::-webkit-progress-value {
 }
 .pic .img2 img {
     width: 330px;
-    height: 380px;
+    height: 360px;
 }
 .pic .img1{
     position: absolute;
-    top: 330ch;
-    left: 480px;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
     opacity: 1;
 }
 .pic .img2{
-    position: relative;
-    top: 5px;
-    left: 65px;
+    position: absolute;
+    top: 0;
+    left: 10%;
     transform: translateX(30%);
     opacity: 0;
     transition: 0.5s ease-in-out;
@@ -582,10 +585,13 @@ progress[value]::-webkit-progress-value {
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
 }
 /*兩層圖片交換*/
+.img{
+    position: relative;
+}
 .img .pic1{
     position: absolute;
-    top: 331ch;
-    left: 460px;
+    top: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
     pointer-events: none;
     opacity: 1;
@@ -593,8 +599,8 @@ progress[value]::-webkit-progress-value {
 }
 .img .pic2{
     position: relative;
-    top: 5px;
-    left: 65px;
+    top: 2%;
+    left: 10%;
     transform: translateX(30%);
     opacity: 0;
     transition: 0.5s ease-in-out;
